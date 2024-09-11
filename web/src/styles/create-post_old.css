@@ -1,18 +1,18 @@
 .create-post-container {
   width: 520px;
   height: 720px;
-  background-color: #f2e9e4; /* Пастельный светлый фон */
-  border-radius: 25px; /* Более закругленные края */
+  background-color: #f2e9e4; 
+  border-radius: 25px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Больше отступов для более удобного оформления */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  padding: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 h2 {
   margin-bottom: 3rem;
-  color: #3d405b; /* Мягкий темный цвет для заголовка */
+  color: #3d405b; 
 }
 
 .label-container {
@@ -23,16 +23,16 @@ h2 {
 
 form label {
   font-weight: 700;
-  color: #3d405b; /* Пастельный темный цвет */
-  width: 100%; /* Увеличенная ширина для адаптивности */
+  color: #3d405b; 
+  width: 100%; 
 }
 
 form input {
   padding: 10px;
   margin: 10px 0;
-  border-radius: 15px; /* Более закругленные поля */
-  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
-  background-color: #ffffff; /* Белый фон для полей */
+  border-radius: 15px; 
+  border: 1px solid rgba(100, 100, 100, 0.4); 
+  background-color: #ffffff; 
   color: #3d405b;
 }
 
@@ -47,13 +47,13 @@ form input {
   margin: 5px 0;
   border-radius: 15px;
   border: 1px solid rgba(100, 100, 100, 0.4);
-  background-color: #ffffff; /* Белый фон */
+  background-color: #ffffff; 
   color: #3d405b;
 }
 
 .post-textarea {
   padding: 12px;
-  border-radius: 15px; /* Более округлые поля */
+  border-radius: 15px; 
   border: 1px solid rgba(100, 100, 100, 0.4);
   background-color: #ffffff;
   color: #3d405b;
@@ -66,11 +66,11 @@ form input {
 
 .add-image-button {
   margin-top: 1rem;
-  background-color: #81b29a; /* Пастельный зеленый цвет для кнопки */
+  background-color: #81b29a; 
   width: 100px;
   height: 35px;
   border: none;
-  border-radius: 25px; /* Полностью округленные кнопки */
+  border-radius: 25px;
   font-size: 14px;
   cursor: pointer;
   display: flex;
@@ -80,7 +80,7 @@ form input {
 }
 
 .add-image-button:hover {
-  background-color: #405c2d; /* Темный оттенок зеленого при наведении */
+  background-color: #405c2d; 
 }
 
 .add-post-button-container {
@@ -98,7 +98,7 @@ form input {
   border: none;
   cursor: pointer;
   font-size: 18px;
-  background-color: #81b29a; /* Пастельный зеленый */
+  background-color: #81b29a; 
   color: white;
   display: flex;
   align-items: center;
@@ -117,11 +117,11 @@ form input {
 
 .add-category-btn {
   margin-top: 1rem;
-  background-color: #81b29a; /* Пастельный зеленый */
+  background-color: #81b29a; 
   width: 100px;
   height: 35px;
   border: none;
-  border-radius: 25px; /* Полностью округленные кнопки */
+  border-radius: 25px; 
   font-size: 14px;
   cursor: pointer;
   display: flex;
@@ -131,5 +131,5 @@ form input {
 }
 
 .add-category-btn:hover {
-  background-color: #405c2d; /* Темный оттенок при наведении */
+  background-color: #405c2d; 
 }

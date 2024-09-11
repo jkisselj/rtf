@@ -4,11 +4,11 @@
   bottom: 0;
   right: 15%;
   z-index: 1000;
-  border-radius: 15px 15px 0 0; /* Более закругленные углы */
-  background-color: #f2e9e4; /* Пастельный фон */
-  color: #3d405b; /* Мягкий темный текст */
-  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+  border-radius: 15px 15px 0 0;
+  background-color: #f2e9e4;
+  color: #3d405b; 
+  border: 1px solid rgba(100, 100, 100, 0.4); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .chat-header {
@@ -16,14 +16,14 @@
   justify-content: space-between;
   height: 50px;
   border-bottom: 1px solid rgba(100, 100, 100, 0.4);
-  padding: 8px; /* Чуть больше пространства */
-  background-color: #e8d4d4; /* Светлый пастельный фон для заголовка */
+  padding: 8px; 
+  background-color: #e8d4d4; 
 }
 
 .chat-header img {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Полностью круглые изображения */
+  border-radius: 50%; 
   padding: 2px;
   cursor: pointer;
 }
@@ -33,12 +33,12 @@
 }
 
 .chat-header p {
-  font-size: 16px; /* Увеличенный шрифт для заголовков */
-  color: #3d405b; /* Темный пастельный текст */
+  font-size: 16px; 
+  color: #3d405b; 
 }
 
 .chat-header img:hover {
-  background-color: #dac2c2; /* Мягкий светлый фон при наведении */
+  background-color: #dac2c2; 
 }
 
 .user-chat-info {
@@ -47,13 +47,13 @@
 
 .chat-body {
   font-size: 14px;
-  padding: 10px; /* Больше пространства внутри */
+  padding: 10px; 
   height: 320px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  background-color: #fefefe; /* Светлый фон для тела чата */
-  border-radius: 0 0 15px 15px; /* Закругленные углы внизу */
+  background-color: #fefefe; 
+  border-radius: 0 0 15px 15px; 
 }
 
 .chat-body::-webkit-scrollbar {
@@ -67,15 +67,15 @@
   width: 100%;
   margin: 0;
   border: none;
-  background-color: #e8d4d4; /* Пастельный фон для формы */
+  background-color: #e8d4d4; 
 }
 
 .chat-footer form input {
   padding: 10px;
   width: 100%;
-  border-radius: 20px; /* Более округлые края */
-  background-color: #fff; /* Белый фон для поля ввода */
-  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
+  border-radius: 20px; 
+  background-color: #fff; 
+  border: 1px solid rgba(100, 100, 100, 0.4); 
   color: #3d405b;
 }
 
@@ -84,40 +84,40 @@
   height: 36px;
   padding: 4px;
   margin-left: 10px;
-  border-radius: 50%; /* Полностью круглые кнопки */
+  border-radius: 50%; 
   cursor: pointer;
 }
 
 .chat-footer img:hover {
-  background-color: #dac2c2; /* Легкий светлый фон при наведении */
+  background-color: #dac2c2; 
 }
 
 .msg {
   display: flex;
-  border-radius: 15px; /* Более округлые сообщения */
+  border-radius: 15px; 
   width: 100%;
-  margin-bottom: 8px; /* Больше отступов между сообщениями */
+  margin-bottom: 8px; 
   font-size: 15px;
 }
 
 .right {
   padding: 10px 14px;
   max-width: 250px;
-  border-radius: 20px; /* Более округлые сообщения справа */
-  background-color: var(--primary-color); /* Основной цвет */
+  border-radius: 20px; 
+  background-color: var(--primary-color);
   margin-left: auto;
   height: auto;
   text-wrap: wrap;
   overflow-wrap: break-word;
-  color: #fff; /* Белый текст */
+  color: #fff; 
 }
 
 .left {
   padding: 10px 14px;
   max-width: 250px;
-  border-radius: 20px; /* Более округлые сообщения слева */
-  background-color: #fff; /* Белый фон */
-  color: #3d405b; /* Темный текст */
+  border-radius: 20px; 
+  background-color: #fff; 
+  color: #3d405b; 
   text-wrap: wrap;
   overflow-wrap: break-word;
 }

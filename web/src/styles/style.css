@@ -5,11 +5,11 @@
 }
 
 :root {
-  --background-color: #3e2723; /* Темно коричневый фон */
-  --primary-color: #a3c4bc; /* Мягкий пастельный зеленый */
-  --background-secondory: #e07a5f; /* Пастельный коралловый для контраста */
-  --border-color: rgba(140, 140, 140, 0.4); /* Более светлая рамка */
-  --text-color: #ffffff; /* Белый цвет текста для контраста на темном фоне */
+  --background-color: #3e2723; 
+  --primary-color: #a3c4bc; 
+  --background-secondory: #e07a5f; 
+  --border-color: rgba(140, 140, 140, 0.4); 
+  --text-color: #ffffff; 
   scroll-behavior: smooth;
 }
 
@@ -23,12 +23,12 @@ body {
 .container {
   position: relative;
   display: flex;
-  width: 960px; /* Сделаем контейнер немного уже */
+  width: 960px; 
   margin: 0 auto;
-  padding: 30px; /* Увеличим внутренние отступы */
-  top: 50px; /* Поменяем отступ сверху для более компактного вида */
-  border-radius: 20px; /* Добавим закругленные углы для мягкости */
-  background-color: #3e2723; /* Белый фон для контейнера */
+  padding: 30px; 
+  top: 50px; 
+  border-radius: 20px; 
+  background-color: #3e2723; 
 }
 
 .container::-webkit-scrollbar {
@@ -44,17 +44,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px; /* Немного увеличим ширину скроллбара */
+  width: 8px; 
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  border-radius: 12px; /* Более округлый ползунок */
+  border-radius: 12px; 
 }
 
 body::-webkit-scrollbar-track {
   background-color: var(--background-secondory);
-  border-radius: 12px; /* Округлый трек для скроллбара */
+  border-radius: 12px;
 }
 
 .users-container::-webkit-scrollbar {
@@ -63,13 +63,13 @@ body::-webkit-scrollbar-track {
 
 @media screen and (max-width: 1080px) {
   .filter {
-    width: 28%; /* Чуть увеличим ширину для адаптивности */
+    width: 28%; 
   }
 }
 
 @media screen and (max-width: 900px) {
   .filter {
-    width: 40%; /* Сделаем ширину больше для мобильных устройств */
+    width: 40%; 
   }
 }
 
@@ -84,16 +84,16 @@ body::-webkit-scrollbar-track {
     left: 0;
     top: 45px;
     position: absolute;
-    background-color: var(--background-secondory); /* Фон фильтра */
+    background-color: var(--background-secondory); 
     padding: 15px;
-    border-radius: 15px; /* Закругленные углы фильтра */
+    border-radius: 15px; 
   }
 
   .container {
     display: flex;
-    flex-direction: column; /* Вертикальная компоновка для мобильных */
+    flex-direction: column; 
     margin: 0;
-    padding: 10px; /* Уменьшенные отступы */
+    padding: 10px; 
   }
 
   .post-feed {
@@ -105,10 +105,10 @@ body::-webkit-scrollbar-track {
 
   .post {
     width: 100%;
-    margin-top: 10px; /* Увеличим отступ между постами */
+    margin-top: 10px; 
     padding: 20px;
-    background-color: #f2f2f2; /* Светлый пастельный фон для постов */
-    border-radius: 10px; /* Закругленные углы постов */
+    background-color: #f2f2f2; 
+    border-radius: 10px; 
   }
 
   .user-list {
