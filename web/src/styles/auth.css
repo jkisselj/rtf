@@ -5,56 +5,60 @@
 .auth-title {
   color: var(--primary-color);
   margin-bottom: 20px;
+  font-size: 24px; /* Увеличим заголовок */
+  text-align: center; /* Выровняем по центру */
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 420px; /* Немного шире для удобства */
   margin: 0 auto;
-  padding: 50px 30px;
-  /* margin-top: 40px; */
-  background-color: var(--background-secondory);
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
+  padding: 40px 35px;
+  background-color: #f2e9e4; /* Светлый пастельный фон */
+  border-radius: 20px; /* Более округлые углы */
+  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
 }
 
 form label {
   font-weight: 700;
-  font-size: 12px;
-  color: var(--text-color);
+  font-size: 14px; /* Чуть крупнее для удобства чтения */
+  color: #3d405b; /* Мягкий темный цвет */
   margin-left: 5px;
+  margin-bottom: 8px; /* Увеличим отступ снизу */
 }
 
 form input {
-  padding-bottom: 10px;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px; /* Более округлые поля ввода */
+  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
+  background-color: #fff; /* Белый фон */
+  color: #3d405b; /* Текст темного пастельного цвета */
 }
 
 form button {
-  padding: 10px;
-  margin-top: 20px;
-  transition: 0.5s ease-in-out;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
+  padding: 12px;
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 10px; /* Более округлые кнопки */
   background-color: var(--primary-color);
+  color: #fff;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: var(--primary-color);
-  border: 1px solid var(--border-color);
+  background-color: #a682c3; /* Немного светлее при наведении */
+  border: 1px solid rgba(100, 100, 100, 0.6);
 }
 
 form p {
   padding: 1px 5px;
   margin: 20px auto;
-  color: var(--text-color);
+  color: #3d405b;
+  text-align: center; /* Выровняем текст по центру */
 }
 
 form .errorMsg p {
@@ -62,18 +66,17 @@ form .errorMsg p {
   color: lightcoral;
   margin: 0 auto;
   text-align: center;
+  background-color: #ffe5e5; /* Пастельный красноватый для фона ошибки */
+  border-radius: 8px; /* Округленные края для сообщения об ошибке */
 }
 
 .fullName {
   display: flex;
+  justify-content: space-between; /* Равномерное распределение */
 }
 
 .fullName div {
-  width: 50%;
-}
-
-.fullName div:first-child {
-  margin-right: 10px;
+  width: 48%;
 }
 
 .fullName div input {
@@ -82,12 +85,12 @@ form .errorMsg p {
 
 #gender {
   width: 100%;
-  margin: 5px auto;
-  background: var(--background-color);
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  color: var(--text-color);
+  margin: 8px auto;
+  background: #fff; /* Белый фон для селекта */
+  padding: 12px;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 10px; /* Более округлая форма для выпадающего списка */
+  color: #3d405b;
 }
 
 .errorMsg {
@@ -95,5 +98,5 @@ form .errorMsg p {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px; /* Увеличим отступ */
 }

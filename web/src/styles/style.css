@@ -5,33 +5,30 @@
 }
 
 :root {
-  /* --background-color: rgb(24, 24, 24); */
-  --background-color: rgb(12, 12, 12);
-  --primary-color: #638c47;
-  /* --background-secondory: #242424; */
-  --background-secondory: #1e1d1d;
-  --border-color: rgba(79, 79, 79, 0.72);
-  --text-color: rgba(255, 255, 255, 0.72);
+  --background-color: #3e2723; /* Темно коричневый фон */
+  --primary-color: #a3c4bc; /* Мягкий пастельный зеленый */
+  --background-secondory: #e07a5f; /* Пастельный коралловый для контраста */
+  --border-color: rgba(140, 140, 140, 0.4); /* Более светлая рамка */
+  --text-color: #ffffff; /* Белый цвет текста для контраста на темном фоне */
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; 
+  color:#0e3114;
   position: relative;
 }
 
 .container {
   position: relative;
   display: flex;
-  width: 1120px;
+  width: 960px; /* Сделаем контейнер немного уже */
   margin: 0 auto;
-  padding: 20px;
-  top: 65px;
-  /* height: 100vh; */
-
-  display: flex;
-  /* overflow-y: scroll; */
+  padding: 30px; /* Увеличим внутренние отступы */
+  top: 50px; /* Поменяем отступ сверху для более компактного вида */
+  border-radius: 20px; /* Добавим закругленные углы для мягкости */
+  background-color: #3e2723; /* Белый фон для контейнера */
 }
 
 .container::-webkit-scrollbar {
@@ -47,17 +44,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 6px;
+  width: 8px; /* Немного увеличим ширину скроллбара */
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  border-radius: 6px; /* Закругленные углы для ползунка */
+  border-radius: 12px; /* Более округлый ползунок */
 }
 
 body::-webkit-scrollbar-track {
   background-color: var(--background-secondory);
-  border-radius: 6px; /* Закругленные углы для трека */
+  border-radius: 12px; /* Округлый трек для скроллбара */
 }
 
 .users-container::-webkit-scrollbar {
@@ -66,13 +63,13 @@ body::-webkit-scrollbar-track {
 
 @media screen and (max-width: 1080px) {
   .filter {
-    width: 24%;
+    width: 28%; /* Чуть увеличим ширину для адаптивности */
   }
 }
 
 @media screen and (max-width: 900px) {
   .filter {
-    width: 30%;
+    width: 40%; /* Сделаем ширину больше для мобильных устройств */
   }
 }
 
@@ -80,31 +77,38 @@ body::-webkit-scrollbar-track {
   * {
     margin: 0;
   }
+  
   .filter {
     width: 100%;
     margin: 0;
     left: 0;
-    top: 50px;
-
+    top: 45px;
     position: absolute;
+    background-color: var(--background-secondory); /* Фон фильтра */
+    padding: 15px;
+    border-radius: 15px; /* Закругленные углы фильтра */
   }
 
   .container {
     display: flex;
+    flex-direction: column; /* Вертикальная компоновка для мобильных */
     margin: 0;
-    padding: 0;
+    padding: 10px; /* Уменьшенные отступы */
   }
 
   .post-feed {
     width: 100%;
     position: relative;
-    top: 75px;
+    top: 65px;
     margin: 0;
   }
 
   .post {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px; /* Увеличим отступ между постами */
+    padding: 20px;
+    background-color: #f2f2f2; /* Светлый пастельный фон для постов */
+    border-radius: 10px; /* Закругленные углы постов */
   }
 
   .user-list {

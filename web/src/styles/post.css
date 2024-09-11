@@ -4,31 +4,32 @@
 
 .post {
   width: 600px;
-  border-radius: 10px;
-  background-color: var(--background-secondory);
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.745);
-  margin-bottom: 20px;
+  border-radius: 20px; /* Более мягкие углы */
+  background-color: #f2e9e4; /* Светлый пастельный фон для постов */
+  padding: 25px; /* Увеличенный внутренний отступ для просторности */
+  color: var(--text-color); /* Поменяем на основной цвет текста */
+  margin-bottom: 25px; /* Увеличенный отступ между постами */
   border: 1px solid var(--border-color);
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
 }
 
 .post:hover {
-  background-color: #2a2828;
+  background-color: #eae7dc; /* Светлеющий эффект при наведении */
 }
 
 .post-body-img {
   width: 100%;
-  margin: 10px 0;
-  /* temp */
-  border-radius: 10px;
+  margin: 15px 0;
+  border-radius: 15px; /* Более округленные края изображений */
 }
+
 .post-header {
-  color: white;
+  color: var(--text-color); /* Основной цвет текста */
 }
 
 .post-header-category {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(60, 60, 60, 0.6); /* Более мягкий цвет для категорий */
   font-size: 12px;
   padding: 2px;
   margin-left: 5px;
@@ -37,28 +38,32 @@
 
 .post-header-title {
   font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 500px;
+  margin-bottom: 12px;
+  font-size: 22px; /* Увеличим заголовок */
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: var(--primary-color);
+  color: var(--primary-color); /* Пастельный зеленый для заголовков */
   word-wrap: break-word;
 }
 
 .post-body {
-  padding: 5px;
+  padding: 10px; /* Увеличим отступ для основного текста */
   width: 100%;
+  background-color: #fff; /* Белый фон для текста поста */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Легкая тень для текста */
 }
 
 .post-body-text {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 12; /* Number of lines to show */
+  -webkit-line-clamp: 10; /* Уменьшено количество строк */
   -webkit-box-orient: vertical;
+  color: #3d405b; /* Темный, но мягкий цвет для текста */
 }
 
 .tags {
@@ -66,12 +71,11 @@
 }
 
 .category-tag {
-  font-size: 10px;
-  padding: 2px 10px;
-  margin-right: 4px;
-  padding: 2px 8px;
-  background-color: #063639;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 5px 10px; /* Увеличенный padding для читабельности */
+  margin-right: 6px;
+  background-color: #d3e0dc; /* Пастельный зеленовато-серый */
+  border-radius: 12px; /* Более закругленные теги */
+  border: 1px solid rgba(100, 100, 100, 0.4); /* Более мягкие границы */
+  margin-bottom: 15px;
 }

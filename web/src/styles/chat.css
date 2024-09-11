@@ -1,44 +1,44 @@
 .messenger {
-  width: 330px;
+  width: 340px;
   position: fixed;
   bottom: 0;
   right: 15%;
-
   z-index: 1000;
-
-  border-radius: 5px 5px 0 0;
-  color: white;
-  background-color: var(--background-secondory);
-  color: rgba(255, 255, 255, 0.745);
-  border: 1px solid var(--border-color);
+  border-radius: 15px 15px 0 0; /* Более закругленные углы */
+  background-color: #f2e9e4; /* Пастельный фон */
+  color: #3d405b; /* Мягкий темный текст */
+  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
 }
+
 .chat-header {
   display: flex;
   justify-content: space-between;
-  height: 44px;
-
-  border-bottom: 1px solid var(--border-color);
-  padding: 4px;
+  height: 50px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  padding: 8px; /* Чуть больше пространства */
+  background-color: #e8d4d4; /* Светлый пастельный фон для заголовка */
 }
 
-.chat-header img{
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  padding: 1px;
+.chat-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Полностью круглые изображения */
+  padding: 2px;
   cursor: pointer;
 }
 
-.chat-header img:first-child{
-  margin-right: 10px;
+.chat-header img:first-child {
+  margin-right: 12px;
 }
 
 .chat-header p {
-  font-size: 14px;
+  font-size: 16px; /* Увеличенный шрифт для заголовков */
+  color: #3d405b; /* Темный пастельный текст */
 }
 
 .chat-header img:hover {
-  background-color: #303030;
+  background-color: #dac2c2; /* Мягкий светлый фон при наведении */
 }
 
 .user-chat-info {
@@ -46,80 +46,78 @@
 }
 
 .chat-body {
-  font-size: 12px;
-  padding: 5px;
-  height: 300px;
+  font-size: 14px;
+  padding: 10px; /* Больше пространства внутри */
+  height: 320px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  background-color: #fefefe; /* Светлый фон для тела чата */
+  border-radius: 0 0 15px 15px; /* Закругленные углы внизу */
 }
 
 .chat-body::-webkit-scrollbar {
   display: none;
 }
 
-
-
-
-
 .chat-footer form {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   align-items: center;
   width: 100%;
-  flex-direction: row;
   margin: 0;
-  border-radius: 0;
   border: none;
-
+  background-color: #e8d4d4; /* Пастельный фон для формы */
 }
 
 .chat-footer form input {
-  padding: 6px;
+  padding: 10px;
   width: 100%;
-  border-radius: 10px;
-  background-color: #303030;
-  color: white;
+  border-radius: 20px; /* Более округлые края */
+  background-color: #fff; /* Белый фон для поля ввода */
+  border: 1px solid rgba(100, 100, 100, 0.4); /* Мягкая граница */
+  color: #3d405b;
 }
 
 .chat-footer form .form-img-submit {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   padding: 4px;
   margin-left: 10px;
-  /* background-color: var(--primary-color); */
-  border-radius: 20px;
+  border-radius: 50%; /* Полностью круглые кнопки */
   cursor: pointer;
 }
 
 .chat-footer img:hover {
-  background-color: #303030;
+  background-color: #dac2c2; /* Легкий светлый фон при наведении */
 }
 
 .msg {
   display: flex;
-  border-radius: 10px;
+  border-radius: 15px; /* Более округлые сообщения */
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 8px; /* Больше отступов между сообщениями */
   font-size: 15px;
 }
 
 .right {
-  padding: 8px 12px;
-  max-width: 240px;
-  border-radius: 10px;
-  background-color: var(--primary-color);
-  margin-left: auto; /* This will push it to the right */
+  padding: 10px 14px;
+  max-width: 250px;
+  border-radius: 20px; /* Более округлые сообщения справа */
+  background-color: var(--primary-color); /* Основной цвет */
+  margin-left: auto;
   height: auto;
   text-wrap: wrap;
   overflow-wrap: break-word;
+  color: #fff; /* Белый текст */
 }
 
 .left {
-  padding: 8px 12px;
-  max-width: 240px;
-  border-radius: 10px;
-  background-color: #303030;
+  padding: 10px 14px;
+  max-width: 250px;
+  border-radius: 20px; /* Более округлые сообщения слева */
+  background-color: #fff; /* Белый фон */
+  color: #3d405b; /* Темный текст */
   text-wrap: wrap;
   overflow-wrap: break-word;
 }

@@ -109,7 +109,7 @@ const RenderNavbar = async (user) =>{
   logoLink.className = "navbar-logo"
   const logo = document.createElement("h1");
   logo.className = "logo";
-  logo.textContent = "VOYAGE";
+  logo.textContent = "ASK RABBIT";
   logoLink.appendChild(logo);
   navStart.appendChild(logoLink);
 

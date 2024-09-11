@@ -45,24 +45,24 @@ func (s *server) logRequest(next http.Handler) http.Handler {
 }
 
 func (s *server) CORSMiddleware(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		// Set CORS headers dynamically based on the request's Origin header
-		origin := r.Header.Get("Origin")
-		if origin != "" {
-			w.Header().Set("Access-Control-Allow-Origin", origin)
-			w.Header().Set("Access-Control-Allow-Credentials", "true")
-		}
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        // Allow all origins
+        w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
 
-		// Allow only specific methods for actual requests
-		if r.Method == http.MethodOptions {
-			w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
-			w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With")
-			w.WriteHeader(http.StatusOK)
-			return
-		}
+        // Allow credentials (this header should not be set when using wildcard "*")
+        w.Header().Set("Access-Control-Allow-Credentials", "true")
 
-		next.ServeHTTP(w, r)
-	})
+        // Handle preflight requests
+        if r.Method == http.MethodOptions {
+            w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+            w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With")
+            w.WriteHeader(http.StatusOK)
+            return
+        }
+
+        // Pass to the next middleware/handler
+        next.ServeHTTP(w, r)
+    })
 }
 
 func (s *server) jwtMiddleware(next http.Handler) http.Handler {
